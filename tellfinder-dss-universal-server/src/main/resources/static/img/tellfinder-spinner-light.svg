@@ -1,0 +1,40 @@
+<svg version="1.1" id="tellfinder-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+
+
+    <path fill="#FFF" opacity="0.5" d="M100 200A100.11 100.11 0 0 1 0 100h15.92A84.08 84.08 0 1 0 100 15.92V0a100 100 0 1 1 0 200z">
+    <animateTransform attributeType="xml"
+        attributeName="transform"
+        type="rotate"
+        from="0 100 100"
+        to="360 100 100"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </path>
+    <path fill="#FFF" opacity="0.5" d="M100 173a73 73 0 0 1 0-146v15.91a57.09 57.09 0 0 0 0 114.18z">
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        type="rotate"
+        from="0 100 100"
+        to="360 100 100"
+        dur="1.0s"
+        repeatCount="indefinite"/>
+    </path>
+    <path fill="#FFF" opacity="0.5" d="M100 145.34a45.34 45.34 0 0 1 0-90.69v15.93A29.42 29.42 0 1 0 129.42 100h15.92A45.4 45.4 0 0 1 100 145.34z">
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        type="rotate"
+        from="0 100 100"
+        to="360 100 100"
+        dur="1.25s"
+        repeatCount="indefinite"/>
+    </path>
+    <path fill="#FFF" d="M128.88 94.37a29.63 29.63 0 0 0-23.11-23.23l3.1-15.62a45.12 45.12 0 0 1 35.65 35.83z">
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        type="rotate"
+        from="0 100 100"
+        to="360 100 100"
+        dur="1.25s"
+        repeatCount="indefinite"/>
+    </path>
+</svg>

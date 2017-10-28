@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright 2017 Uncharted Software Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+
+<template class="search-result-header-fixed">
+  <require from="tellfinder-core-ui-lib/services/humanize-value"></require>
+  <require from="tellfinder-core-ui-lib/services/humanize-millis"></require>
+
+  <span title.bind="total|humanizeValue:0" class="search-toolbar-header-info pull-left">Found ${total | humanizeValue:3} ${searchtype} in ${took | humanizeMillis}</span>
+  <div class="search-results-no-results" if.bind="noResults">
+    <div class="search-result-no-results-inner" show.bind="queryUri">
+      <p class="no-results-message">Your query did not return any results.</p>
+    </div>
+  </div>
+</template>

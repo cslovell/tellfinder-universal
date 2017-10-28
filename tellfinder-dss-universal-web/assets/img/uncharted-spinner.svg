@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-10 -10 130 130" class="uncharted-logo">
+    <defs>
+        <style type="text/css"><![CDATA[
+
+            @keyframes pulse {
+                0%   { fill: black; stroke: black;}
+                35% { fill: lightgrey;   stroke: lightgrey;}
+                70%  { fill: black; stroke: black;}
+                100%  { fill: black; stroke: black;}
+            }
+
+            @keyframes glow {
+                100% {transform: box-shadow(0 0 8px red); }
+            }
+
+            .shape {
+            	stroke: black;
+				fill: black;
+				animation-name: pulse;
+                animation-duration: 3.6s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+
+			.dot {
+
+
+                /*animation-direction: alternate;*/
+			}
+
+            #arrow-arm-dot-one {animation-delay: 0s;}
+            #arrow-arm-dot-two {animation-delay: 0.3s;}
+            #arrow-arm-dot-three {animation-delay: 0.6s;}
+            #arrow-tip-centre-dot {animation-delay: 0.9s;}
+            #arrow-tip-left-dot-inner {animation-delay: 1.2s;}
+            #arrow-tip-right-dot-inner {animation-delay: 1.2s;}
+            #arrow-tip-left-dot-outer {animation-delay: 1.5s;}
+            #arrow-tip-right-dot-outer {animation-delay: 1.5s;}
+            #full-arrow-down {animation-delay: 1.8s;}
+            #full-arrow-left {animation-delay: 1.8s;}
+
+		]]></style>
+    </defs>
+
+    <g id="everyone">
+        <path id="arrow-arm-dot-one" class="shape dot"
+              d="M51.8 56.5c1 0 1.9-0.2 2.8-0.7l0.2-0.1c2.7-1.5 3.5-4.9 2-7.5 -1-1.7-2.9-2.8-4.8-2.8 -1 0-1.9 0.2-2.8 0.7L49 46.2c-2.7 1.5-3.5 4.9-2 7.5C48 55.4 49.8 56.5 51.8 56.5z">
+        </path>
+        <path id="arrow-arm-dot-two" class="shape dot"
+              d="M66.8 47.7c1 0 1.9-0.2 2.8-0.7l0.5-0.3c2.7-1.5 3.5-4.9 2-7.5 -1-1.7-2.9-2.8-4.8-2.8 -1 0-1.9 0.2-2.8 0.7L64 37.4c-2.7 1.5-3.5 4.9-2 7.5C63 46.7 64.9 47.7 66.8 47.7z">
+        </path>
+        <path id="arrow-arm-dot-three" class="shape dot"
+              d="M82.6 27.4c-1 0-1.9 0.2-2.8 0.7l-0.5 0.3c-1.3 0.7-2.2 1.9-2.5 3.4 -0.4 1.4-0.2 2.9 0.5 4.2 1 1.7 2.9 2.8 4.8 2.8 1 0 1.9-0.2 2.8-0.7l0.5-0.3c2.7-1.5 3.5-4.9 2-7.5C86.5 28.5 84.7 27.4 82.6 27.4z">
+        </path>
+        <path id="arrow-tip-centre-dot" class="shape dot"
+              d="M97.5 29.8c1 0 1.9-0.2 2.8-0.7l0.2-0.1c2.7-1.5 3.5-4.9 2-7.5 -1-1.7-2.9-2.8-4.8-2.8 -1 0-1.9 0.2-2.8 0.7l-0.2 0.1c-1.3 0.7-2.2 1.9-2.5 3.4 -0.3 1.5-0.2 2.9 0.5 4.2C93.7 28.8 95.6 29.8 97.5 29.8z">
+        </path>
+
+        <path id="arrow-tip-left-dot-inner" class="shape dot"
+              d="M79.4 20l0.4 0.2c0.8 0.5 1.8 0.7 2.8 0.7 2 0 3.8-1.1 4.8-2.8 0.7-1.3 1-2.8 0.5-4.2 -0.4-1.4-1.3-2.5-2.5-3.3L85 10.4c-0.8-0.5-1.8-0.7-2.8-0.7 -2 0-3.8 1.1-4.8 2.8 -0.7 1.3-1 2.8-0.5 4.2C77.2 18.2 78.1 19.2 79.4 20z">
+        </path>
+        <path id="arrow-tip-right-dot-inner" class="shape dot"
+              d="M97.7 36.2c-3.1 0-5.5 2.4-5.5 5.5v0.4c0 3.1 2.4 5.5 5.5 5.5s5.5-2.4 5.5-5.5v-0.4C103.2 38.8 100.8 36.2 97.7 36.2z">
+        </path>
+        <path id="arrow-tip-left-dot-outer" class="shape dot"
+              d="M64.2 11.2l0.2 0.1c0.8 0.5 1.8 0.7 2.8 0.7 2 0 3.8-1.1 4.8-2.8 1.5-2.7 0.6-6.1-2-7.5l-0.2-0.1C69 1.1 68 0.9 67 0.9c-2 0-3.8 1.1-4.8 2.8 -0.7 1.3-1 2.8-0.5 4.2C61.9 9.2 62.9 10.4 64.2 11.2z">
+        </path>
+        <path id="arrow-tip-right-dot-outer" class="shape dot"
+              d="M97.7 54c-3.1 0-5.5 2.4-5.5 5.5v0.2c0 3.1 2.4 5.5 5.5 5.5s5.5-2.4 5.5-5.5v-0.2C103.2 56.5 100.8 54 97.7 54z">
+        </path>
+
+        <path id="full-arrow-down" class="shape arrow"
+              d="M76 84.4c-0.4 0-0.7 0.1-1.2 0.3l-18 10.4V62.7c0-0.7-0.7-1.4-1.5-1.1 -2.2 0.7-4.8 0.7-7 0.1 -0.7-0.2-1.5 0.3-1.5 1.1V95l-18-10.4c-0.3-0.2-0.7-0.3-1.2-0.3 -1.3 0-2.3 1.1-2.3 2.3v6.3c0 0.8 0.4 1.6 1.2 2l24.2 13.9c0.3 0.2 0.7 0.3 1.2 0.3 0.4 0 0.8-0.1 1.2-0.3l24.2-13.9c0.7-0.4 1.2-1.2 1.2-2v-6.3C78.3 85.5 77.2 84.4 76 84.4z">
+        </path>
+        <path id="full-arrow-left" class="shape arrow"
+              d="M38.9 49.3c0.2 0.1 0.4 0.1 0.5 0.1 0.5 0 1-0.3 1.2-0.8 0.5-2.3 1.8-4.5 3.6-6.1 0.3-0.2 0.4-0.6 0.4-1 0-0.3-0.2-0.6-0.5-0.8L15.9 24.2l18-10.5c0.7-0.4 1.2-1.2 1.2-2s-0.4-1.6-1.2-2l-5.4-3.1c-0.7-0.4-1.6-0.4-2.3 0L2 20.6c-0.7 0.4-1.2 1.2-1.2 2v27.8c0 0.8 0.4 1.6 1.2 2l5.4 3.1c0.3 0.2 0.7 0.3 1.2 0.3 0.6 0 1.2-0.2 1.6-0.6s0.7-1.1 0.7-1.7V32.9L38.9 49.3z">
+        </path>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+# IntelliJ project files to ignore
+.idea
+*.iml
+
+# Gradle
+.gradle
+.gradletasknamecache
+
+# OSX kruft
+.DS_Store
+*~
+
+#Redis
+dump.rdb
+
+
+# Java Build Stuff
+build/
+classes/
+target/
+out/
+rebel.xml
+
+# Node/NPM Stuff
+node_modules/
+jspm_packages/
+*.results.json
+dist
+export/
+npm-debug.log
+gulpfile.tmp.*
+
+# Docker-generated whatnots
+tellfinder-common/data
+containers/development/tmp
+*.sublime-project
+*.sublime-workspace
+
+# Vagrant stuff
+.vagrant
+
+#case-management symlinks
+case-management-ui-lib/src/auth-ui-lib
+
+#ui-lib symlinks
+tellfinder-*/tellfinder-*-web/src/tellfinder-core-ui-lib
+tellfinder-*/tellfinder-*-web/src/tellfinder-ui-lib
+tellfinder-*/tellfinder-*-web/src/auth-ui-lib
+tellfinder-*/tellfinder-*-web/src/case-management-ui-lib
+est_logfile.txt
+images.tar
+containers/standalone/imageserver/images
+containers/standalone/demo-index/data
+containers/standalone/demo-index/ids.txt
+containers/packathon/inferlink
+containers/packathon/docker
+
+# Test stuff
+mocha.json
+sites-backup.conf
+containers/local/docker
+containers/development/docker
+
+tellfinder-common/build/
+tellfinder-data/build/
+containers/hadoop-spark-livy/tmp

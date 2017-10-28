@@ -1,0 +1,23 @@
+spring:
+  security:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
+tellfinder:
+  elastic-connector:
+    index: mx_example_0_sift_4.4
+
+  domain:
+    primary-document-property-groups:
+    -   type: Global_PDPs
+        keys:
+        - title
+        - location
+        - username

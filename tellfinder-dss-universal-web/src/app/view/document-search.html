@@ -1,0 +1,89 @@
+<!--
+  ~ Copyright 2017 Uncharted Software Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<template>
+  <require from="tellfinder-core-ui-lib/components/thumbnail/thumbnail-grid"></require>
+  <require from="tellfinder-core-ui-lib/components/search-bar/search-bar"></require>
+  <require from="./sub-nav-bar"></require>
+  <require from="./search-result-header"></require>
+
+  <div class="search-layout">
+    <search-bar
+      fn-context.bind="documentSearchVM"
+      submit-fn.bind="submit">
+    </search-bar>
+
+    <div class="search-container">
+      <div class="search-results-container unpadded">
+        <sub-nav-bar
+          if.bind="hasData"
+          has-data.bind="hasData"
+          context.bind="pagingControlContext"
+          query-linker-object.bind="queryLinkerObject"
+          query-linking-fn.bind="queryLinkingFn"
+          num-results.bind="response.total">
+        </sub-nav-bar>
+
+        <p class="text-center search-results-hint" show.bind="!hasData && !response.took">
+          Enter terms in the field above to search for related documents <br> HINT: Try searching for 'New in Town'
+        </p>
+
+        <search-result-header
+          if.bind="response.took != null"
+          total.bind="response.total"
+          took.bind="response.took"
+          searchtype.bind="searchtype"
+          query-linker-object.bind="queryLinkerObject">
+        </search-result-header>
+
+        <!-- Documents displayed as a grid of thumbnails -->
+        <thumbnail-grid id="document-scroll" class="scroll-y"
+                        if.bind="hasData"
+                        documents.bind="thumbnailContext"
+                        selected-document.bind="selectedThumbnailModel"
+                        on-thumbnail-clicked.bind="onThumbnailClick"
+                        on-thumbnail-closed.bind="onThumbnailDetailsClose"
+                        fn-context.bind="documentSearchVM">
+        </thumbnail-grid>
+
+        <paging-controls if.bind="pagingControlContext && hasData"
+                         context.bind="pagingControlContext"></paging-controls>
+      </div><!--//search-results-container-->
+
+      <!-- Facets -->
+      <div class="facets-column unpadded" show.bind="hasData">
+        <facets-wrapper
+          show.bind="hasData"
+          data.bind="facetsContext"
+          selection-context.bind="facetsSelectionContext"
+          click-fn.bind="onFacetsClick"
+          query-click-fn.bind="onFacetQueryClick"
+          query-close-fn.bind="onFacetQueryClose"
+          fn-context.bind="documentSearchVM"
+          more-fn.bind="onFacetsMore"
+          query-fn.bind="onFacetsQuery"
+          expansion-fn.bind="onFacetsExpansion"
+          search-enabled.bind="true"
+          is-facets-loading.bind="isFacetsLoading"
+          histogram-range-changed-fn.bind="onHistogramRangeChanged"
+          histogram-click-fn.bind="onHistogramClick"
+          badge-close-fn.bind="onFacetsBadgeClose">
+        </facets-wrapper>
+      </div>
+
+    </div><!--//search-container-->
+  </div><!--//search-layout-->
+</template>

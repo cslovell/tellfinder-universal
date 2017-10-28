@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="TellFinder">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TellFinder</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type='image/x-icon' href="/favicon.ico"/>
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/touch/apple-touch-icon-precomposed.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="/assets/img/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="dist/main.css">
+  <!-- TODO: This script tag is placed here to fix an issue with the app loading in the Edge browser
+       due to a problem tracked here, https://github.com/Microsoft/ChakraCore/issues/1415.
+       The Edge browser bug, plus using Aurelia with SystemJS, plugins and globalResources causes the problem.
+       This is a temporary fix and should be removed and tested after the bug mentioned in the comments is fixed -->
+  <script> Function.prototype.call = function(t) { return this.apply(t, Array.prototype.slice.apply(arguments, [1])); } </script>
+</head>
+
+<body aurelia-app="main">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand navbar-brand-logo" href="#"></a>
+  </div>
+</nav>
+<div class="splash flex-center">
+  <div class="message"><div class="tellfinder-spinner"></div>TellFinder Loading...</div>
+</div>
+
+<script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>System.import('aurelia-bootstrapper');</script>
+<div style="display: none">Version: 6.0.4</div>
+</body>
+</html>

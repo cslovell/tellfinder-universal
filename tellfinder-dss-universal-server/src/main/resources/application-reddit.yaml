@@ -1,0 +1,34 @@
+tellfinder:
+  domain:
+    document-properties:
+    -   key: author
+        es-key: feature.author
+        friendly-name: Author
+        group-friendly-name: Authors
+        icon:
+            class-name: fa fa-user
+        tags: array,facet,linkable,case_sensitive
+
+    -   key: score
+        es-key: feature.score
+        friendly-name: Score
+        group-friendly-name: Score
+        icon:
+            class-name: fa fa-thumbs-up
+        tags: array,facet,facet_log,numeric1,sortable
+
+    -   key: subreddit
+        es-key: feature.subreddit
+        friendly-name: Subreddit
+        group-friendly-name: Subreddits
+        icon:
+            class-name: fa fa-pin
+        tags: array,facet,case_sensitive,linkable
+
+    -   key: edited
+        es-key: feature.edited
+        friendly-name: Edited
+        group-friendly-name: Edited
+        icon:
+          class-name: fa fa-pencil
+        tags: array,indicator,numeric1
