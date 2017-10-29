@@ -18,7 +18,7 @@ while the back-end is built from (https://projects.spring.io/spring-boot/)
 
 This application is built from open source TellFinder components.  You must clone the
 [tellfinder-data](https://github.com/unchartedsoftware/tellfinder) and [tellfinder-core-ui-lib](https://github.com/unchartedsoftware/tellfinder-core-ui-lib)
-repositories in the folowing manner: 
+repositories in the following manner: 
 ```
 {workspace_root}
   |
@@ -27,6 +27,18 @@ repositories in the folowing manner:
   --> tellfinder-core-ui-lib
   |
   --> tellfinder-dss-universal (this repository)
+  |
+  --> tellfinder-pipeline-core
+```
+
+Below is a script that will set this up:
+```bash
+    mkdir tellfinder
+    cd tellfinder/
+    git clone https://github.com/unchartedsoftware/tellfinder-dss-universal.git
+    git clone https://github.com/unchartedsoftware/tellfinder-data.git
+    git clone https://github.com/unchartedsoftware/tellfinder-core-ui-lib.git
+    git clone https://github.com/unchartedsoftware/tellfinder-pipeline-core.git
 ```
 
 # JSPM and Gulp
