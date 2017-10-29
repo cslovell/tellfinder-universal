@@ -1,4 +1,4 @@
-# TellFinder DSS Universal
+# TellFinder Universal
 
 > A TellFinder application for general purpose domain-specific search
 
@@ -72,7 +72,6 @@ Next, build and launch the web server:
 ```bash
 cd tellfinder-universal-server/
 ../gradlew build
-cd ..
 java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-universal-server-6.0.4.jar
 ```
 
