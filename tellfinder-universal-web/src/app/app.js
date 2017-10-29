@@ -18,14 +18,14 @@ import {Aurelia, inject, LogManager, FrameworkConfiguration} from 'aurelia-frame
 import {HttpClient} from 'aurelia-fetch-client';
 import {ConsoleAppender} from 'aurelia-logging-console';
 
-import {ConfigService,PropertyService} from 'tellfinder-core-ui-lib';
+import {ConfigService,PropertyService} from 'tellfinder-ui-core';
 
 import {AppUiConfig} from "./app-ui-config";
 
 // App Specific Containers
-import {PropertyFormatService, SearchStrategyService, SearchModel, SuggestionService} from 'tellfinder-core-ui-lib';
+import {PropertyFormatService, SearchStrategyService, SearchModel, SuggestionService} from 'tellfinder-ui-core';
 
-const logger = LogManager.getLogger('dss-unversal-app');
+const logger = LogManager.getLogger('universal-app');
 
 
 @inject(Aurelia, ConfigService, PropertyService, HttpClient, AppUiConfig)
@@ -33,7 +33,7 @@ export class App {
 
   constructor(aurelia, configService, propertyService, httpClient, appUiConfig)
   {
-    logger.debug('Creating DSS-Universal app.');
+    logger.debug('Creating universal app.');
 
     this.aurelia = aurelia;
     this.httpClient = httpClient;
@@ -59,13 +59,13 @@ export class App {
   configure(aurelia) {
     let config = new FrameworkConfiguration(aurelia);
     config
-      .feature('tellfinder-core-ui-lib', () => {
-        config.globalResources('tellfinder-core-ui-lib/components/thumbnail-menu/thumbnail-menu');
-        config.globalResources('tellfinder-core-ui-lib/components/image-gallery/image-control-menu');
-        config.globalResources('tellfinder-core-ui-lib/components/thumbnail-details/thumbnail-details');
-        config.globalResources('tellfinder-core-ui-lib/components/common/property-link');
-        config.globalResources('tellfinder-core-ui-lib/components/common/paging-controls');
-        config.globalResources('tellfinder-core-ui-lib/components/facets/facets-wrapper');
+      .feature('tellfinder-ui-core', () => {
+        config.globalResources('tellfinder-ui-core/components/thumbnail-menu/thumbnail-menu');
+        config.globalResources('tellfinder-ui-core/components/image-gallery/image-control-menu');
+        config.globalResources('tellfinder-ui-core/components/thumbnail-details/thumbnail-details');
+        config.globalResources('tellfinder-ui-core/components/common/property-link');
+        config.globalResources('tellfinder-ui-core/components/common/paging-controls');
+        config.globalResources('tellfinder-ui-core/components/facets/facets-wrapper');
       });
 
     // Resolve Dependencies

@@ -16,8 +16,8 @@
 
 
 <template class="search-result-header-fixed">
-  <require from="tellfinder-core-ui-lib/services/humanize-value"></require>
-  <require from="tellfinder-core-ui-lib/services/humanize-millis"></require>
+  <require from="tellfinder-ui-core/services/humanize-value"></require>
+  <require from="tellfinder-ui-core/services/humanize-millis"></require>
 
   <span title.bind="total|humanizeValue:0" class="search-toolbar-header-info pull-left">Found ${total | humanizeValue:3} ${searchtype} in ${took | humanizeMillis}</span>
   <div class="search-results-no-results" if.bind="noResults">

@@ -39,8 +39,8 @@ module.exports = {
         "**/*.html!text",
         "*.css!text",
         // All our own code dependencies
-        "[tellfinder-core-ui-lib/**/*.js]",
-        "[tellfinder-core-ui-lib/**/*.html!text]",
+        "[tellfinder-ui-core/**/*.js]",
+        "[tellfinder-ui-core/**/*.html!text]",
       ],
       "excludes": [
         "[main.js]",
@@ -59,7 +59,7 @@ module.exports = {
       "includes": [
         // Grab everything including our code
         "**/*.js",
-        "tellfinder-core-ui-lib/**/*.js",
+        "tellfinder-ui-core/**/*.js",
         "css",
         "text",
         // Aurelia itself
@@ -90,7 +90,7 @@ module.exports = {
       // Exclude our code itself, leaving only dependencies
       "excludes": [
         "[**/*.js]",
-        "[tellfinder-core-ui-lib/**/*.js]"
+        "[tellfinder-ui-core/**/*.js]"
       ],
       "options": {
         "inject": true,

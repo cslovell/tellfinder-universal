@@ -1,8 +1,8 @@
-include 'tellfinder-dss-universal-web'
-include 'tellfinder-dss-universal-server'
+include 'tellfinder-universal-web'
+include 'tellfinder-universal-server'
 
 include 'tellfinder-data'
 project(':tellfinder-data').projectDir = new File('../tellfinder-data')
 
-include 'tellfinder-core-ui-lib'
-project(':tellfinder-core-ui-lib').projectDir = new File('../tellfinder-core-ui-lib')
+include 'tellfinder-ui-core'
+project(':tellfinder-ui-core').projectDir = new File('../tellfinder-ui-core')

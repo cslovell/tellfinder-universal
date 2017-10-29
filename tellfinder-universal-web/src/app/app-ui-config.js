@@ -15,7 +15,7 @@
  */
 
 import {inject} from 'aurelia-framework';
-import { ConfigService } from 'tellfinder-core-ui-lib';
+import { ConfigService } from 'tellfinder-ui-core';
 
 const AVAILABLE_ROUTES = [
   { route: '', redirect: 'documents' },

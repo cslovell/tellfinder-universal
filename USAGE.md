@@ -40,7 +40,7 @@ taken to the original source of the document, which in this case, is a Reddit su
 ## Domain Customization ##
 
 In most cases, there will be more elements on your documents than the default provided by [tellfinder-data](https://github.com/unchartedsoftware/tellfinder-data). 
-Note that in the `tellfinder-dss-universal-server/src/main/resources` directory, there is a file titled `application-reddit.yaml`.  
+Note that in the `tellfinder-universal-server/src/main/resources` directory, there is a file titled `application-reddit.yaml`.  
 Here, we can specify some customizations for the data.
 ```
 tellfinder:

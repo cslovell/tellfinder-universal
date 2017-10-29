@@ -18,12 +18,12 @@ import { inject } from 'aurelia-framework';
 import { BindingEngine } from 'aurelia-binding';
 import { DialogService } from 'aurelia-dialog';
 
-import { PROPERTY_TAG, ThumbnailContextBuilder } from 'tellfinder-core-ui-lib';
+import { PROPERTY_TAG, ThumbnailContextBuilder } from 'tellfinder-ui-core';
 
 
-import {Search} from 'tellfinder-core-ui-lib';
+import {Search} from 'tellfinder-ui-core';
 import {DocumentSearchService} from '../../services/document-search-service';
-import { WebsocketService } from 'tellfinder-core-ui-lib';
+import { WebsocketService } from 'tellfinder-ui-core';
 import $ from 'jquery';
 
 

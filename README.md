@@ -17,16 +17,16 @@ while the back-end is built from (https://projects.spring.io/spring-boot/)
 ## Dependencies
 
 This application is built from open source TellFinder components.  You must clone the
-[tellfinder-data](https://github.com/unchartedsoftware/tellfinder) and [tellfinder-core-ui-lib](https://github.com/unchartedsoftware/tellfinder-core-ui-lib)
+[tellfinder-data](https://github.com/unchartedsoftware/tellfinder) and [tellfinder-ui-core](https://github.com/unchartedsoftware/tellfinder-ui-core)
 repositories in the following manner: 
 ```
 {workspace_root}
   |
   --> tellfinder-data
   |
-  --> tellfinder-core-ui-lib
+  --> tellfinder-ui-core
   |
-  --> tellfinder-dss-universal (this repository)
+  --> tellfinder-universal (this repository)
   |
   --> tellfinder-pipeline-core
 ```
@@ -35,9 +35,9 @@ Below is a script that will set this up:
 ```bash
     mkdir tellfinder
     cd tellfinder/
-    git clone https://github.com/unchartedsoftware/tellfinder-dss-universal.git
+    git clone https://github.com/unchartedsoftware/tellfinder-universal.git
     git clone https://github.com/unchartedsoftware/tellfinder-data.git
-    git clone https://github.com/unchartedsoftware/tellfinder-core-ui-lib.git
+    git clone https://github.com/unchartedsoftware/tellfinder-ui-core.git
     git clone https://github.com/unchartedsoftware/tellfinder-pipeline-core.git
 ```
 
@@ -70,15 +70,15 @@ cd ..
 
 Next, build and launch the web server:
 ```bash
-cd tellfinder-dss-universal-server/
+cd tellfinder-universal-server/
 ../gradlew build
 cd ..
-java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-dss-universal-server-6.0.4.jar
+java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-universal-server-6.0.4.jar
 ```
 
 Finally, in a separate console window, build and run the client: 
 ```bash
-cd tellfinder-dss-universal-web/
+cd tellfinder-universal-web/
 npm install && jspm install && gulp symlink
 gulp watch
 ```

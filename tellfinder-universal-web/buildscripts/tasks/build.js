@@ -62,9 +62,9 @@ gulp.task('build-html', function() {
 gulp.task('build-css', function() {
   // Tell libSass where our libraries are for easy @including
   var sassPaths = [
-    "./src/tellfinder-core-ui-lib",
+    "./src/tellfinder-ui-core",
     "./src/fonts",
-    "./src/tellfinder-core-ui-lib/uncharted-bootstrap/scss",
+    "./src/tellfinder-ui-core/uncharted-bootstrap/scss",
     "./node_modules/bootstrap-sass/assets/stylesheets"];
 
   var minify = !!gutil.env.minify;

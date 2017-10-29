@@ -17,7 +17,7 @@
 import {inject, bindable, customElement} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import {Router} from 'aurelia-router';
-import { PROPERTY_TAG, ConfigService, PropertyService } from 'tellfinder-core-ui-lib';
+import { PROPERTY_TAG, ConfigService, PropertyService } from 'tellfinder-ui-core';
 import _ from 'lodash';
 
 

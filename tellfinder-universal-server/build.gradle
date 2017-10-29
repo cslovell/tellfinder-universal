@@ -38,7 +38,7 @@ configurations {
 }
 
 jar {
-  baseName = 'tellfinder-dss-universal-server'
+  baseName = 'tellfinder-universal-server'
   version =  '6.0.4'
 }
 

@@ -17,7 +17,7 @@
 import {HttpClient} from 'aurelia-fetch-client';
 import {inject} from 'aurelia-framework';
 
-import {SearchService} from 'tellfinder-core-ui-lib';
+import {SearchService} from 'tellfinder-ui-core';
 import {FacetsSearchService} from "./facets-search-service";
 
 

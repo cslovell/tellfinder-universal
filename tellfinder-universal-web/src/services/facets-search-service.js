@@ -18,7 +18,7 @@ import {HttpClient} from 'aurelia-fetch-client';
 import {inject} from 'aurelia-framework';
 
 import {buildQueryString} from 'aurelia-path';
-import {PropertyService, PROPERTY_TAG} from 'tellfinder-core-ui-lib';
+import {PropertyService, PROPERTY_TAG} from 'tellfinder-ui-core';
 
 @inject(HttpClient, PropertyService)
 export class FacetsSearchService {

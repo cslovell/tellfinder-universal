@@ -42,7 +42,7 @@ containers/development/tmp
 case-management-ui-lib/src/auth-ui-lib
 
 #ui-lib symlinks
-tellfinder-*-web/src/tellfinder-core-ui-lib
+tellfinder-*-web/src/tellfinder-ui-core
 
 # Test stuff
 mocha.json

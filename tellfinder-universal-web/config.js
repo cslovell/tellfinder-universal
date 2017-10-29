@@ -2,8 +2,8 @@ System.config({
   defaultJSExtensions: true,
   transpiler: false,
   paths: {
-    "tellfinder-core-ui-lib/*": "dist/tellfinder-core-ui-lib/*",
-    "tellfinder-core-ui-lib": "dist/tellfinder-core-ui-lib/index.js",
+    "tellfinder-ui-core/*": "dist/tellfinder-ui-core/*",
+    "tellfinder-ui-core": "dist/tellfinder-ui-core/index.js",
     "*": "dist/app/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*",
