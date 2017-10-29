@@ -53,12 +53,15 @@ First, launch the Docker container services:
 ```bash
 cd containers/local
 docker-compose up -d
+cd ..
 ```
 
 Next, build and launch the web server:
 ```bash
-./gradlew build
-java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-dss-universal-server.jar
+cd tellfinder-dss-universal-server/
+.././gradlew build
+cd ..
+java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-dss-universal-server-6.0.4.jar
 ```
 
 Finally, build and run the client: 
