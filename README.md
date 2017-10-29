@@ -45,7 +45,7 @@ to configure JSPM for installing front-end resources from GitHub.
 
 # Generating Data
 
-To generate data for TellFinder, follow the instuctions in the [TellFinder-Pipeline-Core](https://github.com/unchartedsoftware/tellfinder-pipeline-core) project to build
+To generate data for TellFinder, follow the instructions in the [TellFinder-Pipeline-Core](https://github.com/unchartedsoftware/tellfinder-pipeline-core) project to build
 an Elasticsearch index.
 
 # Building and Running
@@ -59,12 +59,12 @@ cd ..
 Next, build and launch the web server:
 ```bash
 cd tellfinder-dss-universal-server/
-.././gradlew build
+../gradlew build
 cd ..
 java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-dss-universal-server-6.0.4.jar
 ```
 
-Finally, build and run the client: 
+Finally, in a separate console window, build and run the client: 
 ```bash
 cd tellfinder-dss-universal-web/
 npm install && jspm install && gulp symlink
