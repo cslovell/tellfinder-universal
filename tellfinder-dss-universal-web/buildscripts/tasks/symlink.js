@@ -21,7 +21,7 @@ var childExec = require('child_process').exec;
 var isWin = /^win/.test(process.platform);
 
 gulp.task('symlink', function() {
-  doSymlink('tellfinder-core-ui-lib',isWin ? '..\\..\\..\\' : '../../../../');
+  doSymlink('tellfinder-core-ui-lib',isWin ? '..\\..\\' : '../../../');
 });
 
 function doSymlink(project, pathing) {
