@@ -1,0 +1,19 @@
+apply plugin: 'base'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.11'
+}
+
+subprojects {
+  task listAllDependencies(type: DependencyReportTask) {}
+}
+
+allprojects {
+  group 'software.uncharted'
+  version '6.0.4'
+
+  apply plugin: 'idea'
+
+  // If for some reason you ever actually want javadoc, enable this
+  tasks.withType(Javadoc).all { enabled = false }
+}
