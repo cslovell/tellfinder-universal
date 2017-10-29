@@ -13,7 +13,6 @@
 #Redis
 dump.rdb
 
-
 # Java Build Stuff
 build/
 classes/
@@ -43,24 +42,10 @@ containers/development/tmp
 case-management-ui-lib/src/auth-ui-lib
 
 #ui-lib symlinks
-tellfinder-*/tellfinder-*-web/src/tellfinder-core-ui-lib
-tellfinder-*/tellfinder-*-web/src/tellfinder-ui-lib
-tellfinder-*/tellfinder-*-web/src/auth-ui-lib
-tellfinder-*/tellfinder-*-web/src/case-management-ui-lib
-est_logfile.txt
-images.tar
-containers/standalone/imageserver/images
-containers/standalone/demo-index/data
-containers/standalone/demo-index/ids.txt
-containers/packathon/inferlink
-containers/packathon/docker
+tellfinder-*-web/src/tellfinder-core-ui-lib
 
 # Test stuff
 mocha.json
 sites-backup.conf
 containers/local/docker
 containers/development/docker
-
-tellfinder-common/build/
-tellfinder-data/build/
-containers/hadoop-spark-livy/tmp
