@@ -7,7 +7,7 @@ tellfinder:
         group-friendly-name: Authors
         icon:
             class-name: fa fa-user
-        tags: array,facet,linkable,case_sensitive
+        tags: string,array,facet,linkable,case_sensitive
 
     -   key: score
         es-key: feature.score
@@ -22,8 +22,8 @@ tellfinder:
         friendly-name: Subreddit
         group-friendly-name: Subreddits
         icon:
-            class-name: fa fa-pin
-        tags: array,facet,case_sensitive,linkable
+            class-name: fa fa-reddit
+        tags: string,array,facet,case_sensitive,linkable
 
     -   key: edited
         es-key: feature.edited
@@ -32,3 +32,10 @@ tellfinder:
         icon:
           class-name: fa fa-pencil
         tags: array,indicator,numeric1
+
+    primary-document-property-groups:
+    -   type: Post
+        keys:
+        - title
+        - author
+        - subreddit
