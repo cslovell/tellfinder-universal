@@ -4,9 +4,12 @@
 
 ## Overview
 
+TellFinder is an open-source tool for domain specific search. It provides efficient visual analytics to support 
+domain experts by automatically characterizing and organizing publicly available Internet data.
+
 This repository is a sample application built from TellFinder's open source component libraries. It uses
-publicly available Reddit data as it's datasource. The client-side is built using the [Aurelia](http://aurelia.io) fron-end framework, 
-while the back-end is built from (https://projects.spring.io/spring-boot/)
+publicly available Reddit data as it's datasource. The client-side is built using the [Aurelia](http://aurelia.io) front-end framework, 
+while the back-end is built from [Spring Boot](https://projects.spring.io/spring-boot/)
 
 ## Prerequisites
 - [Java8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -61,21 +64,21 @@ To generate data for TellFinder, follow the instructions in the [TellFinder-Pipe
 an Elasticsearch index.
 
 ## Building and Running
-First, launch the Docker container services:
+First, launch the Docker container services (note that sudo access may be necessary for running docker/docker-compose commands).  From the `tellfinder/tellfinder-universal` directory:
 ```bash
 cd containers/local
 docker-compose up -d
 cd ..
 ```
 
-Next, build and launch the web server:
+Next, build and launch the web server.  From the `tellfinder/tellfinder-universal` directory:
 ```bash
 cd tellfinder-universal-server/
 ../gradlew build
 java -jar -Dspring.profiles.active=default,universal ./build/libs/tellfinder-universal-server-6.0.4.jar
 ```
 
-Finally, in a separate console window, build and run the client: 
+Finally, in a separate console window, build and run the client. From the `tellfinder/tellfinder-universal` directory: 
 ```bash
 cd tellfinder-universal-web/
 npm install && jspm install && gulp symlink
