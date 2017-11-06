@@ -64,11 +64,11 @@ To generate data for TellFinder, follow the instructions in the [TellFinder-Pipe
 an Elasticsearch index.
 
 ## Building and Running
-First, launch the Docker container services (note that sudo access may be necessary for running docker/docker-compose commands).  From the `tellfinder/tellfinder-universal` directory:
+First, launch the Docker container services (note that sudo access may be necessary for running docker/docker-compose commands).  
+From the `tellfinder/tellfinder-universal` directory:
 ```bash
 cd containers/local
 docker-compose up -d
-cd ..
 ```
 
 Next, build and launch the web server.  From the `tellfinder/tellfinder-universal` directory:
